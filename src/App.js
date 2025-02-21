@@ -6,6 +6,7 @@ import Home from './Pages/Home/home';
 import {Route,Routes} from 'react-router-dom';
 import Profile from './Pages/Profile/profile';
 import VideoUpload from './Pages/VideoUpload/videoUpload';
+import Signup from './Pages/Signup/signup';
 
 function App() {
     const [sideNavbar, setSideNavbar] = useState(true);
@@ -22,6 +23,7 @@ function App() {
                 <Route path='/watch/:id' element={<Video /> }/>
                 <Route path='/user/:id' element={<Profile sideNavbar={sideNavbar}/>}/>
                 <Route path = '/:id/upload' element={<VideoUpload />}/>
+                <Route path ='/signup' element={<Signup/>}/>
             </Routes>
             
         </div>

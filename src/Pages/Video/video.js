@@ -1,7 +1,6 @@
 import React,{useState} from "react"; 
 // import cloudinary from 'cloudinary-video-player';
 // import "cloudinary-video-player/cld-video-player.min.css";
-import video from "./videoplayback.mp4"
 import './video.css';
 import ThumbUpOffAltIcon from '@mui/icons-material/ThumbUpOffAlt';
 import ThumbDownOffAltIcon from '@mui/icons-material/ThumbDownOffAlt';
@@ -14,10 +13,10 @@ const Video = () =>{
         <div className="vid">
             <div className="vidpost">
                 <div className="vid_youvid">
-                    <video width="400" controls autoplay className="you_vid_vid">
+                    <video width="400" controls autoPlay className="you_vid_vid">
 
-                        <source src={video} type="video/mp4"/>
-                        <source src={video} type="video/webm"/>
+                        <source src="http://res.cloudinary.com/dstm8hbb5/video/upload/v1740402387/fsb2ih5yzqqfrh3wtg2e.mp4" type="video/mp4"/>
+                        <source src="http://res.cloudinary.com/dstm8hbb5/video/upload/v1740402387/fsb2ih5yzqqfrh3wtg2e.mp4" type="video/webm"/>
 
                         your browser doesn't support the video
 
